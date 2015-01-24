@@ -1,4 +1,3 @@
-use 5.16.0;
 use strict;
 use warnings;
 
@@ -26,7 +25,7 @@ __END__
 
 App::Map::Metro is a simple web interface to L<Map::Metro> implemented in L<Mojolicious>. It can also be used as an alternative backend to the C<route> command, by instead using C<mroute> (currently hardcoded to use C<localhost> and port 3000).
 
-The web interface (available at C<http://localhost:3000), lists all installed maps and presents two C<select> menus to pick routes in a chosen city.
+The web interface (available at C<http://localhost:3000>), lists all installed maps and presents two C<select> menus to pick routes in a chosen city.
 
 There is currently no error handlling.
 

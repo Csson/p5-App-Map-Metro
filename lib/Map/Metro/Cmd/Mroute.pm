@@ -1,7 +1,9 @@
 use Map::Metro::Standard::Moops;
+use strict;
+use warnings;
 
-# VERSION
-# PODNAME: Map::Metro::Cmd::Mroute
+# VERSION:
+# PODCLASSNAME:
 
 class Map::Metro::Cmd::Mroute extends Map::Metro::Cmd using Moose {
 
