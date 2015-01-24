@@ -1,10 +1,8 @@
 use Mojolicious::Lite;
 
-use Mojo::Headers;
 use URI::Encode qw/uri_decode/;
 use List::AllUtils qw/uniq/;
 use Map::Metro;
-
 
 my $mapmetro = undef;
 my %maps => ();
@@ -63,7 +61,6 @@ get '/:city/:origin/:destination' => sub {
 
     $c->render('routing', layout => 'default', output => $output, city => $city, stations => [map { [ $_->name => $_->id ] } sorted_stations_in($city)]);
 };
-
 
 sub map_checker {
     my $c = shift;
