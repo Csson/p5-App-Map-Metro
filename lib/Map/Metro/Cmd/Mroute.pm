@@ -34,7 +34,7 @@ class Map::Metro::Cmd::Mroute extends Map::Metro::Cmd using Moose {
         my $url = sprintf 'http://localhost:3000/%s/%s/%s.txt', $self->cityname, $self->origin, $self->destination;
         my $content = HTTP::Tiny->new->get($url)->{'content'};
         print $content;
-
+    }
 }
 
 1;
