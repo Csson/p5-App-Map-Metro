@@ -1,5 +1,8 @@
-use Mojolicious::Lite;
+use 5.16.0;
+use strict;
+use warnings;
 
+use Mojolicious::Lite;
 use URI::Encode qw/uri_decode/;
 use List::AllUtils qw/uniq/;
 use Map::Metro;
