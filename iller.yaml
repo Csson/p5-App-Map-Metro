@@ -1,0 +1,35 @@
+---
+doctype: dist
+
+header:
+  name: App-Map-Metro
+
+prereqs:
+  runtime:
+    requires:
+     - perl: 5.010000
+     - Mojolicious: 6.00
+     - URI::Encode
+     - List::Util;
+     - MooseX::App::Command
+     - HTTP::Tiny
+     - Map::Metro: 0.2403
+
+plugins:
+  - +config: Author::CSSON
+
+
+---
+doctype: weaver
+
+plugins:
+  - +config: Author::CSSON
+
+---
+doctype: cpanfile
+
+---
+doctype: gitignore
+config: Author::CSSON
+always:
+ - /App-Map-Metro-*
