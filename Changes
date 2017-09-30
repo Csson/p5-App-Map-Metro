@@ -1,4 +1,25 @@
 Revision history for App-Map-Metro
 
 {{$NEXT}}
-     - Initial release
+ [API Changes]
+
+ [Bug Fixes]
+
+ [Documentation]
+
+ [Enhancements]
+
+ [New Features]
+
+ [Other Changes]
+ - Rebuilt.
+
+ [Requirements]
+ - Lowered Perl requirement.
+
+ [Stats & Dependency Changes]
+
+ [Testing]
+
+0.0100 2015-01-24T19:27:56Z CET
+ - Initial release
