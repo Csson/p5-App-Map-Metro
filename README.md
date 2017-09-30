@@ -2,9 +2,19 @@
 
 App::Map::Metro - Web interface to Map::Metro maps
 
+<div>
+    <p>
+    <img src="https://img.shields.io/badge/perl-5.10+-blue.svg" alt="Requires Perl 5.10+" />
+    <a href="https://travis-ci.org/Csson/p5-App-Map-Metro"><img src="https://api.travis-ci.org/Csson/p5-App-Map-Metro.svg?branch=master" alt="Travis status" /></a>
+    <a href="http://cpants.cpanauthors.org/release/CSSON/App-Map-Metro-0.0200"><img src="http://badgedepot.code301.com/badge/kwalitee/CSSON/App-Map-Metro/0.0200" alt="Distribution kwalitee" /></a>
+    <a href="http://matrix.cpantesters.org/?dist=App-Map-Metro%200.0200"><img src="http://badgedepot.code301.com/badge/cpantesters/App-Map-Metro/0.0200" alt="CPAN Testers result" /></a>
+    <img src="https://img.shields.io/badge/coverage-81.8%-orange.svg" alt="coverage 81.8%" />
+    </p>
+</div>
+
 # VERSION
 
-Version 0.0001, released 2015-01-24.
+Version 0.0200, released 2017-09-30.
 
 # SYNOPSIS
 
@@ -27,17 +37,13 @@ There is currently no error handlling.
 - [Map::Metro](https://metacpan.org/pod/Map::Metro)
 - [Task::MapMetro::Maps](https://metacpan.org/pod/Task::MapMetro::Maps)
 
-# HOMEPAGE
-
-Please visit the project's homepage at [https://metacpan.org/release/App-Map-Metro](https://metacpan.org/release/App-Map-Metro).
-
 # AUTHOR
 
 Erik Carlsson <info@code301.com>
 
 # COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2015 by Erik Carlsson <info@code301.com>.
+This software is copyright (c) 2016 by Erik Carlsson.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

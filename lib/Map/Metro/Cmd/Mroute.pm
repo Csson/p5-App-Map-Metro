@@ -1,42 +1,46 @@
-use Map::Metro::Standard::Moops;
+use 5.10.0;
 use strict;
 use warnings;
 
-# VERSION:
-# PODCLASSNAME:
+package Map::Metro::Cmd::Mroute;
 
-class Map::Metro::Cmd::Mroute extends Map::Metro::Cmd using Moose {
+# ABSTRACT: Search in a map
+# AUTHORITY
+our $VERSION = '0.0200';
 
-    use MooseX::App::Command;
-    use HTTP::Tiny;
+use Moose;
+use MooseX::App::Command;
+use HTTP::Tiny;
+use Types::Standard qw/Str/;
+extends 'Map::Metro::Cmd';
 
-    parameter cityname => (
-        is => 'rw',
-        isa => Str,
-        documentation => 'The name of the city you want to search in',
-        required => 1,
-    );
-    parameter origin => (
-        is => 'rw',
-        isa => Str,
-        documentation => 'Start station',
-        required => 1,
-    );
-    parameter destination => (
-        is => 'rw',
-        isa => Str,
-        documentation => 'Final station',
-        required => 1,
-    );
+parameter cityname => (
+    is => 'rw',
+    isa => Str,
+    documentation => 'The name of the city you want to search in',
+    required => 1,
+);
+parameter origin => (
+    is => 'rw',
+    isa => Str,
+    documentation => 'Start station',
+    required => 1,
+);
+parameter destination => (
+    is => 'rw',
+    isa => Str,
+    documentation => 'Final station',
+    required => 1,
+);
 
-    command_short_description 'Search in a map';
+command_short_description 'Search in a map';
 
-    method run {
+sub run {
+    my $self = shift;
 
-        my $url = sprintf 'http://localhost:3000/%s/%s/%s.txt', $self->cityname, $self->origin, $self->destination;
-        my $content = HTTP::Tiny->new->get($url)->{'content'};
-        print $content;
-    }
+    my $url = sprintf 'http://localhost:3000/%s/%s/%s.txt', $self->cityname, $self->origin, $self->destination;
+    my $content = HTTP::Tiny->new->get($url)->{'content'};
+    print $content;
 }
 
 1;
