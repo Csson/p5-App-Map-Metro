@@ -6,11 +6,12 @@ package Map::Metro::Cmd::Mroute;
 
 # ABSTRACT: Search in a map
 # AUTHORITY
-# VERSION
+our $VERSION = '0.0200';
 
 use Moose;
 use MooseX::App::Command;
 use HTTP::Tiny;
+use Types::Standard qw/Str/;
 extends 'Map::Metro::Cmd';
 
 parameter cityname => (

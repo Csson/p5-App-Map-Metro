@@ -3,8 +3,9 @@ use warnings;
 
 package App::Map::Metro;
 
-# VERSION
 # ABSTRACT: Web interface to Map::Metro maps
+# AUTHORITY
+our $VERSION = '0.0200';
 
 1;
 
