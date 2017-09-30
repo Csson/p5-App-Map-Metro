@@ -5,7 +5,7 @@ package App::Map::Metro;
 
 # ABSTRACT: Web interface to Map::Metro maps
 # AUTHORITY
-our $VERSION = '0.0200';
+our $VERSION = '0.0201';
 
 1;
 
