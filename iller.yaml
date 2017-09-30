@@ -10,10 +10,12 @@ prereqs:
      - perl: 5.010000
      - Mojolicious: 6.00
      - URI::Encode
-     - List::Util;
+     - List::Util
+     - Moose
      - MooseX::App::Command
      - HTTP::Tiny
-     - Map::Metro: 0.2403
+     - Types::Standard
+     - Map::Metro: 0.2405
 
 plugins:
   - +config: Author::CSSON
